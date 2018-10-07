@@ -40,9 +40,11 @@
                     android:layout_weight="1"/>
 
                 <EditText
+                    android:id="@+id/text_begin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="click"
+                    android:inputType="none"
                     android:background="@null"/>
             </TableRow>
 
@@ -54,9 +56,11 @@
                     android:layout_weight="1"/>
 
                 <EditText
+                    android:id="@+id/text_end"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="click"
+                    android:inputType="none"
                     android:background="@null"/>
             </TableRow>
 
@@ -77,6 +81,10 @@
             </TableRow>
         </TableLayout>
 
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graph"
+            android:layout_width="match_parent"
+            android:layout_height="326dp" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
